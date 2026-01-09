@@ -1,0 +1,136 @@
+/* STYLE FOR HOME PAGE */
+
+:root{
+    --primary-font: "Google Sans";
+    --primary-color: #FFF;
+    --secondary-color: #000;
+    --third-color: #b41212;
+}
+
+*{
+    font-family: var(--primary-font);
+}
+
+span{
+    color: var(--third-color);
+    font-size: 1rem;
+}
+
+/* NAV BAR */
+
+.nav-logo img{
+    height: 60px;
+    width: 60px;
+}
+
+.header .nasa-nav{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nasa-nav a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.nasa-nav .content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link img{
+    height: 25px;
+    width: 25px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.content input{
+    background-color: var(--secondary-color);
+    border: 1px solid #565c65;
+    padding: 10px 5px;
+    color: var(--primary-color);
+}
+
+.content input:focus{
+    border: var(--primary-color);
+}
+
+/* INTRO */
+
+.nasa-intro{
+    background: 
+    linear-gradient(65.99deg, #000 0, transparent 99.04%),
+    url('../assets/images/spacex-OHOU-5UVIYQ-unsplash.webp') center center / cover no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px 50px;
+}
+
+.nasa-intro div{
+    color: var(--primary-color);
+}
+
+.nasa-intro h1{
+    font-size: 3rem;
+}
+
+.main-content{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-content{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-content .card{
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5px solid var(--primary-color);
+    padding-top: 20px;
+}
+
+.card h2{
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+
+.card span{
+    font-weight: 900;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.main-content button{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 30px; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+
+.main-content button:hover{
+    background-color: #df3b3b;
+}
