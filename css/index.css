@@ -16,6 +16,14 @@ span{
     font-size: 1rem;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
 /* NAV BAR */
 
 .nav-logo img{
@@ -71,6 +79,7 @@ span{
 /* INTRO */
 
 .nasa-intro{
+    flex: 1;
     background: 
     linear-gradient(65.99deg, #000 0, transparent 99.04%),
     url('../assets/images/spacex-OHOU-5UVIYQ-unsplash.webp') center center / cover no-repeat;
