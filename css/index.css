@@ -77,13 +77,11 @@ body {
 }
 
 /* INTRO */
-
 .nasa-intro{
-    flex: 1;
+    height: 80vh;
     background: 
     linear-gradient(65.99deg, #000 0, transparent 99.04%),
     url('../assets/images/spacex-OHOU-5UVIYQ-unsplash.webp') center center / cover no-repeat;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -130,6 +128,10 @@ body {
     gap: 2px;
 }
 
+span img{
+    cursor: pointer;
+}
+
 .main-content button{
     background-color: var(--third-color);
     color: var(--primary-color);
@@ -143,3 +145,126 @@ body {
 .main-content button:hover{
     background-color: #df3b3b;
 }
+
+/* NEWS SECTION */
+
+.nasa-news{
+    margin-top: 50px;
+    padding: 0 80px;
+}
+
+.news-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-header h2{
+    font-size: 3rem;
+}
+
+.news-header span{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.new{
+    background: 
+    linear-gradient(65.99deg, #000 0, transparent 99.04%),
+    url('../assets/images/kevin-stadnyk-HsqBGASgXJA-unsplash.webp') center center / cover no-repeat;
+    height: 100%;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.news img{
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+
+.new .new-header{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.new-header h3{
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.new:hover{
+    background-color: var(--primary-color);
+    opacity: 80%;
+}
+
+.sec-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.new-image img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.news-footer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.news-footer .sub-new{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sub-new span{
+    font-size: 0.8rem;
+}
+
+.new-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.new-info h3{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.info-footer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-footer img{
+    height: 20px;
+    width: 20px;
+}
+
